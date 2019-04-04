@@ -1,0 +1,20 @@
+<!--Este HTML nos permitirá ver la página de los parqueaderos-->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Parqueaderos
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!--Aquí se verifica primero lo que traiga terminada, si esta es false lo deja en los parqueaderos disponibles
+Trae el botón que nos permite agregar nuevos parqueaderos-->
+    <app-listas [terminada]="false"></app-listas>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="agregarLista()">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+</ion-content>

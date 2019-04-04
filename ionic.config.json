@@ -1,5 +1,7 @@
 {
   "name": "SmartU",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
